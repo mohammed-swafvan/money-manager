@@ -78,6 +78,7 @@ class HomeScreenTab extends StatelessWidget {
                   .titleSmall
                   ?.copyWith(color: CustomColors.fontSubHeading, fontWeight: FontWeight.w500),
             ),
+            CustomSize.height5,
             ...userData.transaction.map(
               (transaction) => TransationItemTile(transaction: transaction),
             ),
@@ -89,6 +90,7 @@ class HomeScreenTab extends StatelessWidget {
                   .titleSmall
                   ?.copyWith(color: CustomColors.fontSubHeading, fontWeight: FontWeight.w500),
             ),
+            CustomSize.height5,
             ...transactionTwo.map(
               (transaction) => TransationItemTile(transaction: transaction),
             ),

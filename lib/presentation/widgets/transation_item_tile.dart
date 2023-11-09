@@ -7,6 +7,15 @@ class TransationItemTile extends StatelessWidget {
   const TransationItemTile({super.key, required this.transaction});
   final Transaction transaction;
 
+  String getSign(TransactionType type) {
+    switch (type) {
+      case TransactionType.inflow:
+        return "+";
+      case TransactionType.outflow:
+        return "-";
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -65,7 +74,7 @@ class TransationItemTile extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Text(
-              transaction.transactionType == TransactionType.outflow ? "-\$${transaction.amount}" : "\$${transaction.amount}",
+              "${getSign(transaction.transactionType!)}\$${transaction.amount}",
               style: Theme.of(context).textTheme.bodyMedium?.copyWith(
                     color:
                         transaction.transactionType == TransactionType.outflow ? CustomColors.accent : CustomColors.primaryDark,
