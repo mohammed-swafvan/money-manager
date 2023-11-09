@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:money_manager/presentation/screens/home_profile_tab.dart';
-import 'package:money_manager/presentation/screens/home_screen-tab.dart';
+import 'package:money_manager/presentation/screens/home_screen_tab.dart';
 import 'package:money_manager/presentation/utils/custom_colors.dart';
 
 class MainScreenHost extends StatefulWidget {
