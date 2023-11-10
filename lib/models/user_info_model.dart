@@ -2,6 +2,7 @@ import 'package:money_manager/models/transaction_model.dart';
 
 class UserInfoModel {
   final String userName;
+  final String userEmail;
   final String totalBalance;
   final String inflow;
   final String outflow;
@@ -13,6 +14,7 @@ class UserInfoModel {
     required this.inflow,
     required this.outflow,
     required this.transaction,
+    required this.userEmail,
   });
 }
 
@@ -72,6 +74,7 @@ const List<Transaction> transactionTwo = [
 
 final userData = UserInfoModel(
   userName: "Hey, John!",
+  userEmail: "john@example.com",
   totalBalance: "4,586.00",
   inflow: "4,000.00",
   outflow: "2,000.00",

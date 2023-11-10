@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class CustomSize {
-
   // height
   static SizedBox height5 = const SizedBox(height: 5);
   static SizedBox height10 = const SizedBox(height: 10);
@@ -14,5 +13,4 @@ class CustomSize {
   static SizedBox width15 = const SizedBox(width: 15);
   static SizedBox width20 = const SizedBox(width: 20);
   static SizedBox width30 = const SizedBox(width: 30);
-  
 }

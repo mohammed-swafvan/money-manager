@@ -10,7 +10,7 @@ class CustomColors {
   static Color fontDark = const Color.fromARGB(255, 23, 50, 95);
   static Color fontLight = const Color(0xFFB3C7E0);
 
-  static Color fontSubHeading = fontDark.withOpacity(0.6);
+  static Color fontSubHeading = Colors.grey;
 
   static Color accent = const Color.fromARGB(255, 210, 70, 81);
   static Color background = const Color(0xFFF1F2F5);
