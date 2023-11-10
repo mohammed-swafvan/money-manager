@@ -21,7 +21,7 @@ const List<Transaction> transactionOne = [
     categoryType: ItemCategoryType.fashion,
     transactionType: TransactionType.outflow,
     categoryName: "shoes",
-    itemName: "puma Sneakers",
+    itemName: "Puma Sneakers",
     amount: "3,500.00",
     date: "Aug 3",
   ),
@@ -42,7 +42,7 @@ const List<Transaction> transactionTwo = [
     categoryName: "Payments",
     itemName: "Transfer from Jacksson",
     amount: "18,220.00",
-    date: "Oct 8",
+    date: "Oct 21",
   ),
   Transaction(
     categoryType: ItemCategoryType.grocery,
@@ -50,7 +50,23 @@ const List<Transaction> transactionTwo = [
     categoryName: "Food",
     itemName: "Chicken wing",
     amount: "489.00",
-    date: "Oct 21",
+    date: "Oct 8",
+  ),
+  Transaction(
+    categoryType: ItemCategoryType.payments,
+    transactionType: TransactionType.inflow,
+    categoryName: "Payment",
+    itemName: "Comapany income",
+    amount: "489.00",
+    date: "Sep 21",
+  ),
+  Transaction(
+    categoryType: ItemCategoryType.fashion,
+    transactionType: TransactionType.outflow,
+    categoryName: "Specs",
+    itemName: "Raiban",
+    amount: "4699.00",
+    date: "Sep 17",
   ),
 ];
 

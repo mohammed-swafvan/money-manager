@@ -15,6 +15,14 @@ class IncomeExpenseCard extends StatelessWidget {
     return Container(
       padding: EdgeInsets.symmetric(vertical: Dimensions.defaultSpacing - 2, horizontal: Dimensions.defaultSpacing / 2),
       decoration: BoxDecoration(
+        boxShadow: const [
+          BoxShadow(
+            blurRadius: 12,
+            spreadRadius: 3,
+            offset: Offset.zero,
+            color: Colors.black12,
+          )
+        ],
         color: label == "Income" ? CustomColors.primaryDark : CustomColors.accent,
         borderRadius: BorderRadius.circular(Dimensions.defaultRadius),
       ),
@@ -27,12 +35,18 @@ class IncomeExpenseCard extends StatelessWidget {
             children: [
               Text(
                 label,
-                style: Theme.of(context).textTheme.titleSmall?.copyWith(color: Colors.white, fontWeight: FontWeight.w400),
+                style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w400,
+                    ),
               ),
               CustomSize.height5,
               Text(
                 amount,
-                style: Theme.of(context).textTheme.titleMedium?.copyWith(color: Colors.white, fontWeight: FontWeight.w500),
+                style: Theme.of(context).textTheme.titleMedium?.copyWith(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                    ),
               ),
             ],
           ),

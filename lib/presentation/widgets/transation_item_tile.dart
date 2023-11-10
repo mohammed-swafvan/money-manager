@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:money_manager/models/transaction_model.dart';
 import 'package:money_manager/presentation/utils/custom_colors.dart';
@@ -14,6 +15,13 @@ class TransationItemTile extends StatelessWidget {
       case TransactionType.outflow:
         return "-";
     }
+  }
+
+  Color getRandomiconBgColor() {
+    Random random = Random();
+    int index = random.nextInt(CustomColors.randomColorList.length);
+    Color color = CustomColors.randomColorList[index];
+    return color;
   }
 
   @override
@@ -42,11 +50,11 @@ class TransationItemTile extends StatelessWidget {
               BoxShadow(
                 color: Colors.black12,
                 offset: Offset.zero,
-                blurRadius: 10,
-                spreadRadius: 4,
+                blurRadius: 4,
+                spreadRadius: 2,
               ),
             ],
-            color: Colors.amber,
+            color: getRandomiconBgColor(),
             borderRadius: BorderRadius.circular(Dimensions.defaultRadius - 3),
           ),
           child: Icon(

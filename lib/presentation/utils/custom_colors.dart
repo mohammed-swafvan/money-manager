@@ -14,4 +14,15 @@ class CustomColors {
 
   static Color accent = const Color.fromARGB(255, 210, 70, 81);
   static Color background = const Color(0xFFF1F2F5);
+
+  static List<Color> randomColorList = [
+    Colors.purple,
+    Colors.amber,
+    fontSubHeading,
+    fontDark,
+    Colors.red,
+    Colors.black,
+    Colors.indigo,
+    primaryDark,
+  ];
 }
